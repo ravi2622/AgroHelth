@@ -10,3 +10,4 @@ let cycleschema = new schema({
 let Cycle = mongoose.model("Cycle", cycleschema);
 
 model.exports = Cycle;
+

@@ -167,3 +167,13 @@ app.get("/qustions", async (req, res) => {
 app.get("/qustions/newqustion", (req, res) => {
     res.render("./qustion/newqustion.ejs");
 });
+
+app.post("/qustions", async (req, res) => {
+    let { qustion } = req.body;
+
+    console.log(qustion);
+
+    // let from = await User.
+
+    res.redirect("/qustions");
+});

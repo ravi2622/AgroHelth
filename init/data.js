@@ -198,7 +198,7 @@ const samplelistings = [
     },
     {
         "title": "Saline Soil",
-        "image": "https://media.istockphoto.com/id/483572799/photo/background-of-earth-and-dirt.jpg?s=1024x1024&w=is&k=20&c=c_JT2-d5v5r3Gx3-FdOogofaB7nvaeI4KPZphwMSCY8=",
+        "image": "https://palayeshcood.com/wp-content/uploads/2023/09/Saline-soil-for-agriculture.jpg",
         "monthlycycle": [
             {"month": "January", "crop": "Barley (Cereals)", "action": "Barley is a good choice for saline soil in winter as it can tolerate higher salinity levels. Plant in January and let it grow until February."},
             {"month": "February", "crop": "Barley (Cereals)", "action": "Barley is a good choice for saline soil in winter as it can tolerate higher salinity levels. Plant in January and let it grow until February."},

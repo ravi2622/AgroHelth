@@ -17,13 +17,14 @@ body {
     background-color: #387F39;
 }
 
-.fa-compass {
+.fa-plant {
     font-size: 2rem;
+    margin-left: 18px;
     transition: color 100ms linear 100ms;
 }
 
-.fa-compass:hover {
-    color: #fe424d;
+.fa-plant:hover {
+    color: yellow;
 }
 
 .nav-link {
@@ -116,7 +117,7 @@ body {
 }
 
 .card-body {
-    padding: 0 !important;
+    /* padding: 0 !important; */
 }
 
 .card-text p {
@@ -153,4 +154,10 @@ body {
 .add-btn {
     background-color: #fe424d !important;
     border: none !important;
+}
+
+/* qstion card  */
+
+.qustion-card {
+    background-color: rgba(159, 195, 16, 0.808) !important;
 }

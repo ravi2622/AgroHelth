@@ -1,0 +1,24 @@
+<% layout("./layouts/boilerplate") %>
+
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <% for(Qustion of Qustions) { %>
+    <a href="/qustions/<%= Qustion._id %>" class="listing-link">
+    <div class="card qustion-card col-5 ms-3 mb-3 mt-3" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">Qustion From @<%= Qustion.from.username %></h5>
+          <hr>
+          <h6 class="card-subtitle text-muted">
+            <p>created at :<%= `${Qustion.created_at}`.split(" ")[4] %>
+            <br>
+            <%= `${Qustion.created_at}`.split(" ").slice(0, 4).join("-") %>
+            </p>
+          </h6>
+          <hr>
+          <h6>Qustion</h6>
+          <p class="card-text"><%= Qustion.qustion %></p>
+        </div>
+    </div>
+    </a>
+    <% } %>
+</div>
+

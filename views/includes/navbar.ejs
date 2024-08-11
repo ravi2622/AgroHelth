@@ -1,21 +1,42 @@
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/"><i class="fa-regular fa-compass"></i></a>
+        <a class="navbar-brand"
+        <% if(!currUser) { %>
+            href="/login"
+        <% }; %>
+            ><i class="fa-solid fa-sun-plant-wilt fa-plant"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link underline-slide"  href="/"></a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link underline-slide" href="/soillisting">Soil Types</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link underline-slide" href="/listings/new">New Listings</a>
+                    <a class="nav-link underline-slide" href="/qustions">Qustions about Soil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-slide" href="/qustions/newqustion">Add Qustions</a>
                 </li>
             </ul>
+                <ul class="navbar-nav ms-auto">
+                    <% if(!currUser) { %>
+                    <li class="nav-item">
+                        <a class="nav-link underline-slide"  href="/singnup">Sing up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link underline-slide" href="/login">Log in</a>
+                    </li>
+                    <% }; %>
+    
+                    <% if(currUser) { %>
+                    <li class="nav-item">
+                        <a class="nav-link underline-slide" href="/logout">Log out</a>
+                    </li>
+                    <% }; %>
+    
+                </ul>
         </div>
     </div>
 </nav>
